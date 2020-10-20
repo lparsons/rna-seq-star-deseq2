@@ -8,7 +8,9 @@ trimming:
   adapter: ACGGATCGATCGATCGATCGAT
 
 ref:
-  # the STAR index
+  # reference fasta file
+  fasta: "data/ref/genome.chr21.fa"
+  # the STAR index (will be generated if not found)
   index: "data/ref/index"
   # gtf file with transcripts
   annotation: "data/ref/annotation.chr21.gtf"

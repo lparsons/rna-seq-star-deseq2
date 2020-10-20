@@ -1,5 +1,6 @@
 *
-!scripts
+!schemas
+!schemas/*
 !scripts/*
 !scripts/common
 !scripts/common/*

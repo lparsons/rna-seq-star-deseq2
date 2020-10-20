@@ -16,7 +16,9 @@ trimming:
   adapter: ACGGATCGATCGATCGATCGAT
 
 ref:
-  # the STAR index
+  # reference fasta file
+  fasta: "path/to/reference.fasta"
+  # the STAR index (will be generated if not found)
   index: "path/to/star/index"
   # gtf file with transcripts
   annotation: "path/to/annotation.gtf"

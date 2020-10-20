@@ -21,6 +21,8 @@ properties:
   ref:
     type: object
     properties:
+      fasta:
+        type: string
       index:
         type: string
       annotation:

@@ -38,3 +38,21 @@ rule align:
     threads: 24
     wrapper:
         "0.66.0/bio/star/align"
+
+
+rule star_index:
+    input:
+        fasta = config["ref"]["fasta"]
+    output:
+        directory(config["ref"]["index"])
+    message:
+        "Testing STAR index"
+    threads:
+        24
+    params:
+        extra = ""
+    log:
+        "logs/star_index.log"
+    wrapper:
+        "0.66.0/bio/star/index"
+
